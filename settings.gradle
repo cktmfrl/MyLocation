@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "MyLocationExam"
+rootProject.name = "MyLocation"
 include ':app'

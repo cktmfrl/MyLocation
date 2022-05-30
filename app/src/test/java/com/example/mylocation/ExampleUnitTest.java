@@ -1,4 +1,4 @@
-package com.example.mylocationexam;
+package com.example.mylocation;
 
 import org.junit.Test;
 

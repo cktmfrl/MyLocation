@@ -4,6 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -14,7 +15,7 @@
 
         <EditText
             android:id="@+id/edit_input"
-            android:layout_width="300dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:hint="주소 입력(ex. 서울시 용산구)" />
 
@@ -25,12 +26,38 @@
             android:onClick="searchLocation"
             android:text="검색" />
 
-        <ImageButton
-            android:id="@+id/request_my_location_button"
+        <FrameLayout
             android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:onClick="getLocation"
-            android:src="@drawable/ic_my_location" />
+            android:layout_height="50dp">
+
+            <ImageButton
+                android:id="@+id/request_my_location_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="getLocation" />
+
+            <ImageView
+                android:id="@+id/iv_location"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_my_location"
+                tools:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:visibility="gone"
+                tools:visibility="gone" />
+
+
+        </FrameLayout>
+
+
     </LinearLayout>
 
     <TextView
@@ -40,7 +67,7 @@
         android:layout_margin="20dp"
         android:text="조회된 주소 정보"
         android:textColor="@color/purple_500"
-        android:textSize="18sp" />
+        android:textSize="13sp" />
 
 
 </LinearLayout>

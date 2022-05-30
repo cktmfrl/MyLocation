@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyLocationExam</string>
+    <string name="app_name">MyLocation</string>
 
     <string name="permission_rationale">핵심 기능에 위치 권한이 필요합니다. 위치 권한 허용하시겠습니까?</string>
     <string name="permission_denied_explanation">권한이 거부되었지만 핵심 기능에 필요합니다. 위치 권한 허용하시겠습니까?</string>

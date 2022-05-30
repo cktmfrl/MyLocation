@@ -6,7 +6,7 @@ android {
     compileSdk 29
 
     defaultConfig {
-        applicationId "com.example.mylocationexam"
+        applicationId "com.example.mylocation"
         minSdk 21
         targetSdk 29
         versionCode 1
