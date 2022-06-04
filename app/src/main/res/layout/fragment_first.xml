@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="위치 정보(주소정보)"
+        android:textColor="@color/purple_500"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/text_current_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="현재 주소"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/text_current_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="위도, 경도"
+        android:textSize="13sp" />
+    
+</LinearLayout>
