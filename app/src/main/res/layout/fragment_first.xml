@@ -15,14 +15,14 @@
         android:id="@+id/text_current_address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="현재 주소"
+        android:text="주소 : "
         android:textSize="13sp" />
 
     <TextView
         android:id="@+id/text_current_location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="위도, 경도"
+        android:text="위도 : \n경도 : "
         android:textSize="13sp" />
     
 </LinearLayout>

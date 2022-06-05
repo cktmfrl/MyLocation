@@ -284,11 +284,11 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
         public void onLocationChanged(Location location) {
             setRequestLocationButtonsState(false);
 
-            //String provider = location.getProvider(); // 위치정보 (Ex. network, gps)
+            String provider = location.getProvider(); // 위치정보 (Ex. network, gps)
             double longitude = location.getLongitude(); // 위도
             double latitude = location.getLatitude(); // 경도
 
-            String res = "위도 : " + latitude + "\n" + "경도 : " + longitude;
+            String res = "위도 : " + latitude + "\n" + "경도 : " + longitude  + "\n" + provider;
 
             // 위도, 경도에 해당하는 주소명 가져오기
             GeoUtil.getFromLocation(MainActivity.this,

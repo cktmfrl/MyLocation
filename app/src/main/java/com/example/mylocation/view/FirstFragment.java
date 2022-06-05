@@ -67,8 +67,8 @@ public class FirstFragment extends Fragment {
     }
 
     public void setCurrentLocation(String location, String address) {
+        mAddressTextView.setText("주소 : " + address);
         mLocationTextView.setText(location);
-        mAddressTextView.setText(address);
     }
 
 }
